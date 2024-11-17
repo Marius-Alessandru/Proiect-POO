@@ -23,7 +23,7 @@ public class CatalogGadgetApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Catalog de Gadgeturi");
+        primaryStage.setTitle("MMAK Industry SA");
 
         // Load the initial list of gadgets from file
         gadgeturi = loadInitialGadgets();
