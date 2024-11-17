@@ -30,7 +30,7 @@ public class GadgetApp extends Application {
                 Label stocLabel = new Label("Stoc: " + gadget.getStoc() + " bucăți");
 
                 // Add a separator line or an empty label for spacing
-                Label separator = new Label("-----");
+                Label separator = new Label(" \n");
 
                 // Add all labels to the VBox
                 vbox.getChildren().addAll(nameLabel, brandLabel, priceLabel, descLabel, ratingLabel, stocLabel, separator);
