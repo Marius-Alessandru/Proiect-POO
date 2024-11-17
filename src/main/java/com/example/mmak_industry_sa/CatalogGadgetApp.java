@@ -36,7 +36,7 @@ public class CatalogGadgetApp extends Application {
 
         // Create a container for displaying details of the selected gadget
         VBox detailsBox = new VBox(10);
-        detailsBox.setStyle("-fx-padding: 10; -fx-border-color: black; -fx-border-width: 1;");
+        detailsBox.setStyle("-fx-padding: 10; -fx-border-color: red; -fx-border-width: 1;");
 
         // TextFields for editing gadget details
         TextField IDField = new TextField();
@@ -128,7 +128,7 @@ public class CatalogGadgetApp extends Application {
         mainLayout.setStyle("-fx-padding: 20;");
 
         // Create and set the scene
-        Scene scene = new Scene(mainLayout, 400, 600);
+        Scene scene = new Scene(mainLayout, 500, 600);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
