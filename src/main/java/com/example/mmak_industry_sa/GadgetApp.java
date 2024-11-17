@@ -3,6 +3,7 @@ package com.example.mmak_industry_sa;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import java.util.List;
@@ -39,8 +40,12 @@ public class GadgetApp extends Application {
             vbox.getChildren().add(new Label("Nu s-au încărcat gadgeturi din fișier."));
         }
 
+        // Wrap the VBox in a ScrollPane
+        ScrollPane scrollPane = new ScrollPane(vbox);
+        scrollPane.setFitToWidth(true); // Ensure the content width fits the ScrollPane width
+
         // Set up the Scene and Stage
-        Scene scene = new Scene(vbox, 400, 600);
+        Scene scene = new Scene(scrollPane, 400, 600);
         primaryStage.setTitle("Detalii Gadgeturi");
         primaryStage.setScene(scene);
         primaryStage.show();
