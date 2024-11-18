@@ -3,6 +3,7 @@ package com.example.mmak_industry_sa;
 import java.io.*;
 import java.util.List;
 
+
 public class GadgetPersistence {
 
     // Method to save the list of gadgets to a file
